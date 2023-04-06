@@ -12,6 +12,6 @@ class OffresDemploiesSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\OffresDemploies::factory()->count(5)->create();
+        \App\Models\OffresDemploies::factory()->count(6)->create();
     }
 }

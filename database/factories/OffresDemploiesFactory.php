@@ -19,10 +19,11 @@ class OffresDemploiesFactory extends Factory
      */
     public function definition(): array
     {
+        
         return [
             'title' => $this->faker->sentence(),
             'companyName' => $this->faker->company(),
-            'location' => $this->faker->name(),
+            'location' => $this->faker->country(),
             'content' => $this->faker->sentence()
         ];
     }

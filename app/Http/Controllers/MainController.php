@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\OffresDemploies;
+use App\Models\OffresDemploies;
 
 class MainController extends Controller
 {
@@ -12,7 +12,9 @@ class MainController extends Controller
     }
 
     public function offres(){
-        return view('offres');
+        $offres = OffresDemploies::all();
+        return view('offres', ['offres' => $offres]);
+    
     }
 
     public function about(){
@@ -27,7 +29,4 @@ class MainController extends Controller
         return view('services');
     }
 
-    public function index(){
-        
-    }
 }

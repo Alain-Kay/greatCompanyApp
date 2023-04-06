@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\OffresDemploies;
 use Illuminate\Http\Request;
 
-class OffresDemploies extends Controller
+class OffresDemploiesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+       
     }
 
     /**
