@@ -1,5 +1,7 @@
 @extends('layouts.template')
 
+@section('title', 'Contact')
+
 @section('content')
      <!-- ======= Contact Section ======= -->
      <section id="contact" class="contact">

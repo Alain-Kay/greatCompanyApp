@@ -1,5 +1,7 @@
 @extends('layouts.template')
 
+@section('title', 'Nos services')
+
 @section('content')
     <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
