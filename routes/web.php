@@ -19,6 +19,10 @@ Route::get('/A-propos', [MainController::class, 'about'])->name('A-propos');
 Route::get('/Nos-services', [MainController::class, 'services'])->name('Nos-services');
 Route::get('/Contact', [MainController::class, 'contact'])->name('Contact');
 Route::get('/Offres-demplois', [MainController::class, 'offres'])->name('Offres-demplois');
+Route::get('/Offre/{offre:slug}', [MainController::class, 'show'])->name('offre');
+
+
+
 
 
 

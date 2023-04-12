@@ -16,7 +16,7 @@
             <h4 class="card-title">{{$offre->title}}</h4>
             <h5 class="card-subtitle mb-2 text-muted">{{$offre->companyName}} - {{ $offre->location}}</h5>
             <p class="card-text">{{$offre->content}}</p>
-            <a href="#" class="btn btn-primary">Voir plus</a>
+            <a href="{{ route('offre', $offre->slug)}}" class="btn btn-primary">Voir plus</a>
           </div>
         </div>
       </a>
