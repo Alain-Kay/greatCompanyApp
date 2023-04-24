@@ -10,7 +10,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach ($offres as $offre)
       <div class="col">
-        <a href="#" class="list-group-item">
+        <a href="{{ route('offre', $offre->slug)}}" class="list-group-item">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">{{$offre->title}}</h4>
@@ -26,8 +26,6 @@
 </div>
 
 
-
-    
 @endsection
 
 
