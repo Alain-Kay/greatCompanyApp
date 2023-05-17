@@ -18,4 +18,9 @@ class OffresDemploies extends Model
         'location',
         'content'
     ];
+
+    public function dateFormat()
+    {
+        return date_format($this->created_at, 'd:M:Y H:i');
+    }
 }
