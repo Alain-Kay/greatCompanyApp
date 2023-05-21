@@ -1,8 +1,11 @@
 @extends('layouts.template')
 
+@section('title', 'Description de l\'offre')
+    
+
 @section('content')
 
-<h3 class="text-center">Offre</h3>
+<h3 class="text-center">@yield('title')</h3>
     
 <div class="job-description">
     <h2 class="job-title">Titre de l'emploi: [Titre du poste]</h2>
