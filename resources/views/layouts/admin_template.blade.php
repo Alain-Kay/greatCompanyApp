@@ -5,6 +5,7 @@
    @include('layouts.partials.navbar_admin')
    <section class="content">
     <!-- Your Page Content Here -->
+    @include('layouts.flash_message')
     @yield('content')
    </section>
    {{-- @include('layouts.partials.footer') --}}
