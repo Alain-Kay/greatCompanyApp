@@ -39,4 +39,10 @@
     margin: 0 auto; 
   }
   </style>
+
+  <script>
+    setTimeout(function() {
+      document.getElementById('flash-message').remove();
+    }, 10000);
+  </script>
   
