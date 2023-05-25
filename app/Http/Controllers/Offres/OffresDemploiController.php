@@ -30,7 +30,7 @@ class OffresDemploiController extends Controller
     {
         $offres = OffresDemploies::create(
             $request->validated());
-            return to_route('admin.offres.index')->with('success', 'L\'article est sauvegardee');
+            return to_route('admin.offres.index')->with('success', 'L\'offre est sauvegardée');
     }
 
 
@@ -50,7 +50,7 @@ class OffresDemploiController extends Controller
     public function update(OfrresDemploiRequest $request, OffresDemploies $offre)
     {
         $offre->update($request->validated());
-        return to_route('admin.offres.index')->with('success', 'L\'offre a ete modifiee');
+        return to_route('admin.offres.index')->with('success', 'L\'offre a été modifiée');
     }
 
     /**
@@ -59,6 +59,6 @@ class OffresDemploiController extends Controller
     public function destroy(OffresDemploies $offre)
     {
         $offre->delete();
-        return to_route('admin.offres.index')->with('success', 'L\'offre a ete supprimee');
+        return to_route('admin.offres.index')->with('success', 'L\'offre a été supprimée');
     }
 }
