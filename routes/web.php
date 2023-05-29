@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\Offres\OffresDemploiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,9 @@ Route::get('/Offres-demplois', [MainController::class, 'offres'])->name('Offres-
 Route::get('/Offre/{offre:slug}', [MainController::class, 'show'])->name('offre');
 
 
+Route::prefix('admin')->name('admin.')->group(function(){
+    Route::resource('offres', OffresDemploiController::class);
+});
 
 
 
