@@ -14,9 +14,11 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">{{$offre->title}}</h4>
-            <h5 class="card-subtitle mb-2 text-muted">{{$offre->companyName}} - {{ $offre->location}}</h5>
+            <h5 class="card-subtitle mb-2 text-muted">{{$offre->companyName}}  <i class="fa-solid fa-location-dot">{{ $offre->location}}</i></h5>
             <p class="card-text">{{$offre->content}}</p>
             <a href="{{ route('offre', $offre->slug)}}" class="btn btn-primary">Voir plus</a>
+            
+            {{ $offre->createdAt()}}
           </div>
         </div>
       </a>
