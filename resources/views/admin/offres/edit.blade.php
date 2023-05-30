@@ -36,6 +36,11 @@
                     <div class="alert alert-danger m-2">{{ $message }}</div>
                 @enderror
             </div>
+            <script>
+                tinymce.init({
+                  selector: '#content'
+                });
+              </script>
             <div class="d-flex justify-content-center mb-6">
                 <button type="submit" class="btn btn-primary mt-3">Poster l'offre</button>
             </div>

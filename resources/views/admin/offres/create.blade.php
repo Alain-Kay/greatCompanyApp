@@ -28,6 +28,12 @@
                 <div class="alert alert-danger m-2">{{ $message }}</div>
             @enderror
         </div>
+
+        <script>
+            tinymce.init({
+              selector: '#content'
+            });
+          </script>
         <div class="col-12 mt-4">
             <div class="form-group purple-border">
                 <label for="content">CONTENU</label>
