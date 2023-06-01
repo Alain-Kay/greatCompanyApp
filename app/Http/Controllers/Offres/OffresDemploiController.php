@@ -11,7 +11,7 @@ class OffresDemploiController extends Controller
     public function index()
     {
         return view('admin.offres.index', [
-            'offres' => OffresDemploies::all()
+            'offres' => OffresDemploies::orderBy('created_at', 'asc')->paginate(10)
         ]);
     }
 

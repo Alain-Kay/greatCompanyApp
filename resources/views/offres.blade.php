@@ -27,8 +27,9 @@
   </div>
 </div>
 
-
+<div>
+  {{ $offres->links() }}
+</div>
 @endsection
-
 
 

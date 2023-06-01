@@ -20,10 +20,10 @@ class OffresDemploiesObserver
     /**
      * Handle the OffresDemploies "updated" event.
      */
-    public function updated(OffresDemploies $offresDemploies): void
+    public function updated(OffresDemploies $offresDemploies)
     {
-        // $offresDemploies->slug = Str::slug($offresDemploies->title, '-');
-        // $offresDemploies->saveQuietly();
+        $offresDemploies->slug = Str::slug($offresDemploies->title, '-');
+        $offresDemploies->saveQuietly();
     }
 
     /**

@@ -5,7 +5,8 @@
 @section('content')
 <div class="container" style="max-width: 800px;">
     <h1 class="text-center mb-2">@yield('title')</h1>
-    <form action="{{ route('admin.offres.store')}}" method="post">
+    <form action="{{ route('admin.offres.update', $offre->id)}}" method="post">
+        @method('PUT')
         @csrf
         <div class="col-12">
             <label for="title">TITRE</label>
@@ -33,7 +34,7 @@
                 <label for="content">CONTENU</label>
                 <textarea class="form-control @error ('content') is-invalid @enderror" id="content" name="content"  rows="3" >{{ $offre->content}}</textarea>
                 @error('content')
-                    <div class="alert alert-danger m-2">{{ $message }}</div>
+                    <div class="alert alert-danger m-2">{{  $message  }}</div>
                 @enderror
             </div>
             <script>
@@ -42,7 +43,7 @@
                 });
               </script>
             <div class="d-flex justify-content-center mb-6">
-                <button type="submit" class="btn btn-primary mt-3">Poster l'offre</button>
+                <button type="submit" class="btn btn-primary mt-3">Modifier l'offre</button>
             </div>
         </div>
     </form>

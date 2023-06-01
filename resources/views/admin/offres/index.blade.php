@@ -58,5 +58,6 @@
               
             </tbody>    
         </table>
+        {{ $offres->links() }}
     </div>
 @endsection

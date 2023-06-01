@@ -15,7 +15,7 @@ class MainController extends Controller
     }
 
     public function offres(){
-        $offres = OffresDemploies::all();
+        $offres = OffresDemploies::orderBy('created_at', 'desc')->paginate(6);
         return view('offres', ['offres' => $offres]);
     
     }
